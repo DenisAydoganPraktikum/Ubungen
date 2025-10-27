@@ -1,0 +1,86 @@
+Lokale Umgebung einrichten
+
+Workspace anlegen in Eclipse
+→ z. B. Uebung_1_Git_EntwicklerA
+
+Java-Projekt erstellen:
+Name = Basisanwendung (oder OP_Uebung1)
+
+JDK 1.8 oder höher, JavaFX aktivieren (falls nicht automatisch).
+
+🗃️ 2️⃣ Lokales Git-Repository verbinden
+
+Separaten Ordner anlegen →
+Uebung_1_Git_EntwicklerA_LokalesRepository
+
+In Eclipse:
+Rechtsklick Projekt → Team → Share Project → Git → Create…
+→ diesen Ordner wählen → Branch master → Finish
+✅ Projekt liegt jetzt im lokalen Repo.
+
+💾 3️⃣ Ersten Commit
+
+Rechtsklick Projekt → Team → Commit…
+
+Dateien in Staged Changes ziehen → Kommentar („Initial Commit“)
+
+Commit klicken
+→ Code ist jetzt im lokalen Repository.
+
+☁️ 4️⃣ Allgemeines Repository auf GitHub
+
+Auf GitHub neues Repo erstellen (z. B. OP_Uebung1)
+
+Eclipse: Team → Push Branch 'master'
+→ URI = GitHub-URL,
+→ User + Personal Access Token
+→ Preview → Push.
+
+Auf GitHub prüfen, ob Dateien sichtbar sind.
+
+Jonker und Oesing als Collaborators einladen.
+
+🧩 5️⃣ Projekt auf MVC umstellen
+
+Im Projekt → Packages erstellen:
+
+app
+business
+gui
+ownUtil
+
+
+Enthaltene Klassen:
+Package	Klassen	Zweck
+app	Main	Start (JavaFX Application)
+business	Freizeitbad, FreizeitbaederModel	Daten + Logik
+gui	FreizeitbaederControl, FreizeitbaederView	Steuerung + UI
+ownUtil	PlausiException, MeldungsfensterAnzeiger	Hilfsklassen (Fehler + Dialoge)
+
+
+🧪 6️⃣ Testen
+
+Main starten → UI öffnet sich.
+
+Test: Felder ausfüllen → Eingabe → Anzeige.
+
+Menü: Datei → csv-Export
+→ erstellt Freizeitbaeder.csv im Projektordner.
+
+🔄 7️⃣ Gemeinsame Arbeit (A & B)
+
+A pusht seine Änderungen.
+
+B pullt sie (Team → Pull).
+
+Danach kann B ergänzen (z. B. CsvDateiLeser) → Commit + Push.
+
+Bei Konflikten: Pull → merge → Commit → Push.
+
+📋 8️⃣ Typische Kontrollpunkte
+
+✅ Freizeitbaeder.csv wird erstellt
+✅ UI öffnet sich (keine Fehler)
+✅ Eingabe/Anzeige funktioniert
+✅ Projekt liegt auf GitHub und ist vollständig
+✅ Jonker & Oesing haben Zugriff
