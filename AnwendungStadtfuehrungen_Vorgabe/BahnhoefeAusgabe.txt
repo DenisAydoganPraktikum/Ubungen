@@ -1,0 +1,14 @@
+--- Daten des Bahnhofs ---
+Name des Bahnhofs: fdf
+Ort des Bahnhofs: dfd
+Anzahl Gleise: 34
+Letzte Renovierung: 23
+Zugarten: erfe sfasf
+--------------------------
+--- Daten des Bahnhofs ---
+Name des Bahnhofs: der
+Ort des Bahnhofs: er
+Anzahl Gleise: 343
+Letzte Renovierung: 343
+Zugarten: fdffdsdf eer
+--------------------------
